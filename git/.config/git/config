@@ -16,5 +16,10 @@
     colorMoved = default
 
 [user]
-    email = zaiic@outlook.com
-    name = zaiic
+    email = georgecai0908@outlook.com
+    name = mistgc
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
