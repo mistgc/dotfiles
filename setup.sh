@@ -3,6 +3,7 @@
 dotfiles=(
     'yazi'
     'wezterm'
+    "zed"
 )
 
 for i in "${dotfiles[@]}"; do
