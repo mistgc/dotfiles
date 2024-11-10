@@ -1,9 +1,10 @@
 #!/usr/bin/sh
 
 dotfiles=(
-    'yazi'
-    'wezterm'
+    "yazi"
+    "wezterm"
     "zed"
+    "zellij"
 )
 
 for i in "${dotfiles[@]}"; do
