@@ -5,6 +5,7 @@ dotfiles=(
     "wezterm"
     "zed"
     "zellij"
+    "starship"
 )
 
 for i in "${dotfiles[@]}"; do
