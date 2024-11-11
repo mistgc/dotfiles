@@ -8,50 +8,91 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Ctrl n" { SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "Ctrl n" { SwitchToMode "Normal"; }
+        bind "Ctrl k" { SwitchToMode "Normal"; }
+////////////////////////////////////////////
+// Colemak /////////////////////////////////
+//        bind "h" "Left" { Resize "Increase Left"; }
+//        bind "j" "Down" { Resize "Increase Down"; }
+//        bind "k" "Up" { Resize "Increase Up"; }
+//        bind "l" "Right" { Resize "Increase Right"; }
         bind "h" "Left" { Resize "Increase Left"; }
-        bind "j" "Down" { Resize "Increase Down"; }
-        bind "k" "Up" { Resize "Increase Up"; }
-        bind "l" "Right" { Resize "Increase Right"; }
+        bind "n" "Down" { Resize "Increase Down"; }
+        bind "e" "Up" { Resize "Increase Up"; }
+        bind "i" "Right" { Resize "Increase Right"; }
+////////////////////////////////////////////
+// Colemak /////////////////////////////////
+//        bind "H" { Resize "Decrease Left"; }
+//        bind "J" { Resize "Decrease Down"; }
+//        bind "K" { Resize "Decrease Up"; }
+//        bind "L" { Resize "Decrease Right"; }
         bind "H" { Resize "Decrease Left"; }
-        bind "J" { Resize "Decrease Down"; }
-        bind "K" { Resize "Decrease Up"; }
-        bind "L" { Resize "Decrease Right"; }
+        bind "N" { Resize "Decrease Down"; }
+        bind "E" { Resize "Decrease Up"; }
+        bind "I" { Resize "Decrease Right"; }
+////////////////////////////////////////////
         bind "=" "+" { Resize "Increase"; }
         bind "-" { Resize "Decrease"; }
     }
     pane {
         bind "Ctrl p" { SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "h" "Left" { MoveFocus "Left"; }
+//        bind "l" "Right" { MoveFocus "Right"; }
+//        bind "j" "Down" { MoveFocus "Down"; }
+//        bind "k" "Up" { MoveFocus "Up"; }
         bind "h" "Left" { MoveFocus "Left"; }
-        bind "l" "Right" { MoveFocus "Right"; }
-        bind "j" "Down" { MoveFocus "Down"; }
-        bind "k" "Up" { MoveFocus "Up"; }
+        bind "i" "Right" { MoveFocus "Right"; }
+        bind "n" "Down" { MoveFocus "Down"; }
+        bind "e" "Up" { MoveFocus "Up"; }
+////////////////////////////////////////////
         bind "p" { SwitchFocus; }
-        bind "n" { NewPane; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "n" { NewPane; SwitchToMode "Normal"; }
+        bind "k" { NewPane; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
-        bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "n" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        bind "j" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
     move {
         bind "Ctrl h" { SwitchToMode "Normal"; }
-        bind "n" "Tab" { MovePane; }
+// Colemak /////////////////////////////////
+//        bind "n" "Tab" { MovePane; }
+        bind "k" "Tab" { MovePane; }
+////////////////////////////////////////////
         bind "p" { MovePaneBackwards; }
+// Colemak /////////////////////////////////
+//        bind "h" "Left" { MovePane "Left"; }
+//        bind "j" "Down" { MovePane "Down"; }
+//        bind "k" "Up" { MovePane "Up"; }
+//        bind "l" "Right" { MovePane "Right"; }
         bind "h" "Left" { MovePane "Left"; }
-        bind "j" "Down" { MovePane "Down"; }
-        bind "k" "Up" { MovePane "Up"; }
-        bind "l" "Right" { MovePane "Right"; }
+        bind "n" "Down" { MovePane "Down"; }
+        bind "e" "Up" { MovePane "Up"; }
+        bind "i" "Right" { MovePane "Right"; }
+////////////////////////////////////////////
     }
     tab {
         bind "Ctrl t" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-        bind "h" "Left" "Up" "k" { GoToPreviousTab; }
-        bind "l" "Right" "Down" "j" { GoToNextTab; }
-        bind "n" { NewTab; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "h" "Left" "Up" "k" { GoToPreviousTab; }
+//        bind "l" "Right" "Down" "j" { GoToNextTab; }
+//        bind "n" { NewTab; SwitchToMode "Normal"; }
+        bind "h" "Left" "Up" "e" { GoToPreviousTab; }
+        bind "i" "Right" "Down" "n" { GoToNextTab; }
+        bind "k" { NewTab; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
         bind "b" { BreakPane; SwitchToMode "Normal"; }
@@ -70,11 +111,18 @@ keybinds {
     }
     scroll {
         bind "Ctrl s" { SwitchToMode "Normal"; }
-        bind "e" { EditScrollback; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "e" { EditScrollback; SwitchToMode "Normal"; }
+        bind "j" { EditScrollback; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
-        bind "j" "Down" { ScrollDown; }
-        bind "k" "Up" { ScrollUp; }
+// Colemak /////////////////////////////////
+//        bind "j" "Down" { ScrollDown; }
+//        bind "k" "Up" { ScrollUp; }
+        bind "n" "Down" { ScrollDown; }
+        bind "e" "Up" { ScrollUp; }
+////////////////////////////////////////////
         bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
         bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
@@ -85,13 +133,20 @@ keybinds {
     search {
         bind "Ctrl s" { SwitchToMode "Normal"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
-        bind "j" "Down" { ScrollDown; }
-        bind "k" "Up" { ScrollUp; }
+// Colemak /////////////////////////////////
+//        bind "j" "Down" { ScrollDown; }
+//        bind "k" "Up" { ScrollUp; }
+        bind "n" "Down" { ScrollDown; }
+        bind "e" "Up" { ScrollUp; }
+////////////////////////////////////////////
         bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
         bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
-        bind "n" { Search "down"; }
+// Colemak /////////////////////////////////
+//        bind "n" { Search "down"; }
+        bind "k" { Search "down"; }
+////////////////////////////////////////////
         bind "p" { Search "up"; }
         bind "c" { SearchToggleOption "CaseSensitivity"; }
         bind "w" { SearchToggleOption "Wrap"; }
@@ -144,15 +199,24 @@ keybinds {
         bind "c" { NewTab; SwitchToMode "Normal"; }
         bind "," { SwitchToMode "RenameTab"; }
         bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
-        bind "n" { GoToNextTab; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//        bind "n" { GoToNextTab; SwitchToMode "Normal"; }
+        bind "k" { GoToNextTab; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
         bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
         bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
+// Colemak /////////////////////////////////
+//         bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
+//         bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
+//         bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
+//         bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
-        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
-        bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
-        bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "i" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "n" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "e" { MoveFocus "Up"; SwitchToMode "Normal"; }
+////////////////////////////////////////////
         bind "o" { FocusNextPane; }
         bind "d" { Detach; }
         bind "Space" { NextSwapLayout; }
@@ -162,13 +226,22 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt f" { ToggleFloatingPanes; }
-        bind "Alt n" { NewPane; }
+// Colemak /////////////////////////////////
+//        bind "Alt n" { NewPane; }
+        bind "Alt k" { NewPane; }
+////////////////////////////////////////////
         bind "Alt i" { MoveTab "Left"; }
         bind "Alt o" { MoveTab "Right"; }
+// Colemak /////////////////////////////////
+//        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
+//        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+//        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
+//        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt i" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt n" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt e" "Alt Up" { MoveFocus "Up"; }
+////////////////////////////////////////////
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
@@ -180,9 +253,14 @@ keybinds {
     shared_except "pane" "locked" {
         bind "Ctrl p" { SwitchToMode "Pane"; }
     }
+// Colemak /////////////////////////////////
+//    shared_except "resize" "locked" {
+//        bind "Ctrl n" { SwitchToMode "Resize"; }
+//    }
     shared_except "resize" "locked" {
-        bind "Ctrl n" { SwitchToMode "Resize"; }
+        bind "Ctrl k" { SwitchToMode "Resize"; }
     }
+////////////////////////////////////////////
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
     }
