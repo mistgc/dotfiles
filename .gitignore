@@ -1,1 +1,3 @@
 zed/.config/zed/.tmp*
+tmux/.config/tmux/plugins/*
+!tmux/.config/tmux/plugins/tpm/
