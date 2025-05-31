@@ -1,5 +1,5 @@
 local wezterm = require('wezterm')
-local theme = require('lua/rose-pine').main
+local theme = require('lua.rose-pine').main
 local config = {
     font_size = 14,
     colors = theme.colors(),
