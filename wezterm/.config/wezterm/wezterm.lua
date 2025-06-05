@@ -1,9 +1,9 @@
 local wezterm = require('wezterm')
-local theme = require('lua.rose-pine').main
+local scheme_gruvbox = require('lua.gruvbox')
 local config = {
     font_size = 14,
-    colors = theme.colors(),
-    window_frame = theme.window_frame(),
+    colors = scheme_gruvbox.colors(),
+    -- window_frame = scheme_rose_pine.window_frame(),
     use_fancy_tab_bar = false,
     hide_tab_bar_if_only_one_tab = true,
     show_new_tab_button_in_tab_bar = false,
