@@ -8,6 +8,7 @@ dotfiles=(
     "starship"
     "tmux"
     "hypr"
+    "fish"
 )
 
 for i in "${dotfiles[@]}"; do

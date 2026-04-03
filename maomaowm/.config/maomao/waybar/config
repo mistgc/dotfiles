@@ -123,7 +123,7 @@
     },
     "network": {
       "interval": 2,
-      "format-wifi": "{essid} ({signalStrength}%)\uf1eb",
+      "format-wifi": "{essid} \uf1eb",
       "format-ethernet": "󰈀 {ifname}",
       "format-linked": "\uf059 No IP ({ifname})",
       "format-disconnected": "\uf071 Disconnected",
