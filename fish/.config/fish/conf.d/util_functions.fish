@@ -15,3 +15,7 @@ function connect-dormitory-network
     echo "OPENING $url"
     xdg-open $url
 end
+
+function fmttb
+    tr -s " " | column -t -s '|' -o '|'
+end

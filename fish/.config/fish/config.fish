@@ -4,10 +4,12 @@ if status is-interactive
 end
 
 source_dir $HOME/.config/fish/conf.d/app
+source $HOME/.fishrc.fish
 
 fish_add_path $HOME/.deno/bin/
 fish_add_path $HOME/.local/bin/
 fish_add_path $HOME/.local/share/nvim/mason/bin/
+fish_add_path /usr/local/texlive/2026/bin/x86_64-linux/
 
 set -U fish_greeting
 set -gx EDITOR nvim
@@ -27,3 +29,6 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # opencode
 fish_add_path /home/gc/.opencode/bin
+
+# zoxide
+zoxide init fish | source

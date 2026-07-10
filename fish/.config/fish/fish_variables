@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:\x1d
-SETUVAR fish_user_paths:/home/gc/\x2eopencode/bin\x1e/home/gc/\x2elocal/share/nvim/mason/bin\x1e/home/gc/\x2elocal/bin\x1e/home/gc/\x2edeno/bin
+SETUVAR fish_user_paths:/usr/local/texlive/2026/bin/x86_64\x2dlinux\x1e/usr/local/texlive/2026/bin\x1e/home/gc/\x2eopencode/bin\x1e/home/gc/\x2elocal/share/nvim/mason/bin\x1e/home/gc/\x2elocal/bin\x1e/home/gc/\x2edeno/bin
